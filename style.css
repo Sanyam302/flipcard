@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+section::before{
+    content: " ";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(-250px,-100px);
+    background: linear-gradient(90deg,#b02769,white);
+
+}
+section::after{
+    content: " ";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(250px,100px);
+    background: linear-gradient(90deg,#b02769,white);
+
+}
+.container{
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    z-index: 100;
+    transition: .5s;
+    transform-style: preserve-3d;
+}
+.container .card{
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    backface-visibility: hidden;
+}
+.container:hover{
+    transform: rotateY(180deg);
+}
+.h1{
+    position: relative;
+    height: 60px;
+    width: 100%;
+    display: inline-block;
+}
+.logo{
+    position: absolute;
+    height: 60px;
+    width: 100px;
+    background-image: url(Mastercard-Logo.png);
+    background-size: cover;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.p1{
+    color: white;
+    margin-left: 120px;
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.p2{
+    
+        color: white;
+        margin-left: 20px;
+        margin-top: 60px;
+        font-size: 20px;
+        font-weight: lighter;
+    
+}
+.p3{
+    
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+
+}
+.p4{
+    
+    color: white;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+
+}
+.p5{
+    
+    color: white;
+    margin-left: 330px;
+  
+    font-size: 25px;
+    font-weight: bolder;
+
+}
+.p6{
+    
+    color: white;
+    margin-left: 350px;
+   
+    font-size: 25px;
+    font-weight: bolder;
+
+}
+h6{
+    font-style: oblique;
+    color: white;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.blackstrip{
+position: absolute;
+width: 100%;
+height: 45px;
+background-color: black;
+margin-top: 20px;
+}
+.signature{
+    margin-left: 30px;
+    margin-top: 70px;
+    width: 80%;
+    height: 45px;
+    border-radius: 6px;
+    
+    background: repeating-linear-gradient(#fff,#fff 3px,#efefef 0px,#efefef 9px);
+}
+h5{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.container .card.back{
+    transform: rotateY(180deg);
+}
+
