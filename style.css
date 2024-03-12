@@ -8,7 +8,7 @@ section{
     position: relative;
     height: 120vh;
     width: 100%;
-    background-color: black;
+    background:linear-gradient(90deg,rgba(0, 0, 255, 0.2),black);
     display: flex;
     justify-content: center;
     align-items: center;
